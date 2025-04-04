@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'inter';
+}
+
+@font-face {
+    font-family: 'inter';
+    src: url(/src/fonts/Inter_28pt-Regular.ttf);
+}
+
+:root {
+    --Color1: #3454d1;
+    --Color2: #c0ff00;
+    --Claro: #f5f3f5;
+    --Oscuro: #23201E;
+}
