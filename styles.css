@@ -15,3 +15,42 @@
     --Claro: #f5f3f5;
     --Oscuro: #23201E;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--Claro);
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Navegador */
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--Claro);
+    padding: 22px 30px;
+}
+
+header h1 {
+    font-size: 30px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    gap: 30px;
+}
+
+nav a:hover {
+    color: var(--Color1);
+    text-decoration: 2px solid underline var(--Color1);
+    text-underline-offset: 4px;
+}
