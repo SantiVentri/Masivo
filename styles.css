@@ -24,6 +24,11 @@ body {
     background-color: var(--Claro);
 }
 
+*::selection {
+    background-color: var(--Color2);
+    color: var(--Oscuro);
+}
+
 a {
     text-decoration: none;
     color: #000;
