@@ -36,10 +36,15 @@ a {
 
 /* Navegador */
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     justify-content: space-between;
     background-color: var(--Claro);
     padding: 22px 30px;
+    z-index: 999;
 }
 
 header h1 {
@@ -58,4 +63,100 @@ nav a:hover {
     color: var(--Color1);
     text-decoration: 2px solid underline var(--Color1);
     text-underline-offset: 4px;
+}
+
+nav .cart {
+    position: relative;
+}
+
+nav .cart img, nav .cart span {
+    cursor: pointer;
+}
+
+nav .cart span {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Color1);
+    color: white;
+    border-radius: 50%;
+    height: 22px;
+    width: 22px;
+    font-size: 12px;
+    user-select: none;
+}
+
+nav .cart_list {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    background-color: #e8e8e8;
+    border-radius: 10px;
+    width: 250px;
+    gap: 20px;
+    overflow: hidden;
+}
+
+nav .cart input {
+    display: none;
+}
+
+nav .cart input:checked ~ .cart_list {
+    display: flex;
+}
+
+nav .cart_list h4 {
+    background-color: #fff;
+    padding: 10px 15px;
+}
+
+nav .user_cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+nav .user_cart p {
+    font-size: 15px;
+    font-weight: normal;
+    color: var(--Oscuro);
+}
+
+nav .cart_list_bottom {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 8px;
+    gap: 8px;
+}
+
+nav .cart_list .total {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .cart_list_bottom button {
+    background-color: var(--Color2);
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+nav .cart_list_bottom button:hover {
+    filter: brightness(0.8);
+}
+
+nav .cart_list_bottom button:active {
+    filter: opacity(0.8);
 }
