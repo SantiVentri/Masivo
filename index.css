@@ -126,14 +126,16 @@
 }
 
 /* Lista de cursos */
-
 .coursesList {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    list-style-type: none;
-    gap: 30px;
+    display: grid;
+    align-self: center;
+    grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+    justify-content: center;
+    padding: 0;
+    max-width: 1350px;
+    gap: 60px;
 }
+  
 
 .coursesList .item {
     display: flex;
