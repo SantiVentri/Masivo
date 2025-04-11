@@ -1,0 +1,64 @@
+/* Primera sección */
+#welcome {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    height: 100vh;
+    overflow: hidden;
+    gap: 20px;
+}
+
+#welcome h1 {
+    font-size: 45px;
+    text-align: center;
+    margin: 0;
+    width: 570px;
+    z-index: 1;
+}
+
+#welcome span {
+    position: relative;
+    padding: 0 5px;
+}
+
+#welcome .box {
+    position: absolute;
+    top: 0;
+    left: -8px;
+    right: -8px;
+    bottom: 0;
+    background-color: var(--Color1);
+    z-index: -1;
+    clip-path: polygon(
+        10px 0%,
+        100% 0%,
+        calc(100% - 10px) 100%,
+        0% 100%
+    );
+}
+
+#welcome a {
+    display: flex;
+    align-items: center;
+    background-color: var(--Color2);
+    border-radius: 8px;
+    font-weight: bold;
+    padding: 8px 16px;
+    gap: 10px;
+}
+
+#welcome a:hover {
+    filter: brightness(0.8);
+}
+
+#welcome .bg {
+    position: absolute;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.8);
+    z-index: -1;
+}
+
