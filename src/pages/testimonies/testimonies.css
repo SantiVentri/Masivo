@@ -1,0 +1,46 @@
+main {
+    margin-top: 120px;
+}
+main img{
+    height: 320px;
+}
+
+h1{
+    font-size: 55px;
+}
+
+.celebs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    gap: 30px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Color1);
+    color: white;
+    width: 250px;
+    outline: 1px solid black;
+}
+
+.texto {
+    padding: 10px;
+    height: 60px;
+}
+
+video{
+    -webkit-box-shadow: 17px 10px 34px -4px rgba(52,84,209,0.72);
+-moz-box-shadow: 17px 10px 34px -4px rgba(52,84,209,0.72);
+box-shadow: 17px 10px 34px -4px rgba(52,84,209,0.72);
+
+border-radius: 0px 0px 0px 0px;
+-moz-border-radius: 0px 0px 0px 0px;
+-webkit-border-radius: 0px 0px 0px 0px;
+border: 2px solid #000000;
+
+}
