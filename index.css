@@ -62,6 +62,30 @@
     z-index: -1;
 }
 
+/* Sección de empresas */
+#businesses {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    gap: 30px;
+}
+
+#businesses h1 {
+    font-size: 28px;
+}
+
+#businesses a {
+    color: var(--Color1);
+    text-decoration: 3px solid underline;
+    text-underline-offset: 4px;
+}
+
+#businesses .logos{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
 /* Sección de cursos */
 #courses {
     display: flex;
