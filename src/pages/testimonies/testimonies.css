@@ -1,20 +1,37 @@
 main {
-    margin-top: 120px;
-}
-main img{
-    height: 320px;
+    display: flex;
+    flex-direction: column;
+    padding: 120px 0 80px 0;
+    gap: 40px;
 }
 
-h1{
+main img{
+    height: 260px;
+}
+
+main h1{
     font-size: 55px;
+}
+
+main section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section2{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .celebs{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     padding: 50px;
     gap: 30px;
 }
@@ -24,23 +41,25 @@ h1{
     flex-direction: column;
     background-color: var(--Color1);
     color: white;
-    width: 250px;
+    width: 220px;
     outline: 1px solid black;
 }
 
 .texto {
+    display: flex;
+    flex-direction: column;
     padding: 10px;
     height: 60px;
+    gap: 5px;
 }
 
 video{
     -webkit-box-shadow: 17px 10px 34px -4px rgba(52,84,209,0.72);
--moz-box-shadow: 17px 10px 34px -4px rgba(52,84,209,0.72);
-box-shadow: 17px 10px 34px -4px rgba(52,84,209,0.72);
+    -moz-box-shadow: 17px 10px 34px -4px rgba(52,84,209,0.72);
+    box-shadow: 17px 10px 34px -4px rgba(52,84,209,0.72);
 
-border-radius: 0px 0px 0px 0px;
--moz-border-radius: 0px 0px 0px 0px;
--webkit-border-radius: 0px 0px 0px 0px;
-border: 2px solid #000000;
-
+    border-radius: 0px 0px 0px 0px;
+    -moz-border-radius: 0px 0px 0px 0px;
+    -webkit-border-radius: 0px 0px 0px 0px;
+    border: 2px solid #000000;
 }
