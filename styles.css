@@ -50,7 +50,7 @@ header h1 {
     font-size: 30px;
 }
 
-nav {
+header nav {
     display: flex;
     align-items: center;
     font-size: 18px;
@@ -58,21 +58,21 @@ nav {
     gap: 30px;
 }
 
-nav a:hover {
+header nav a:hover {
     color: var(--Color1);
     text-decoration: 2px solid underline var(--Color1);
     text-underline-offset: 4px;
 }
 
-nav .cart {
+header nav .cart {
     position: relative;
 }
 
-nav .cart img, nav .cart span {
+header nav .cart img, nav .cart span {
     cursor: pointer;
 }
 
-nav .cart span {
+header nav .cart span {
     position: absolute;
     top: -10px;
     right: -10px;
@@ -88,7 +88,7 @@ nav .cart span {
     user-select: none;
 }
 
-nav .cart_list {
+header nav .cart_list {
     position: absolute;
     top: 50px;
     right: 0;
@@ -101,33 +101,33 @@ nav .cart_list {
     overflow: hidden;
 }
 
-nav .cart input {
+header nav .cart input {
     display: none;
 }
 
-nav .cart input:checked ~ .cart_list {
+header nav .cart input:checked ~ .cart_list {
     display: flex;
 }
 
-nav .cart_list h4 {
+header nav .cart_list h4 {
     background-color: #fff;
     padding: 10px 15px;
 }
 
-nav .user_cart {
+header nav .user_cart {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 200px;
 }
 
-nav .user_cart p {
+header nav .user_cart p {
     font-size: 15px;
     font-weight: normal;
     color: var(--Oscuro);
 }
 
-nav .cart_list_bottom {
+header nav .cart_list_bottom {
     display: flex;
     flex-direction: column;
     background-color: #fff;
@@ -135,14 +135,14 @@ nav .cart_list_bottom {
     gap: 8px;
 }
 
-nav .cart_list .total {
+header nav .cart_list .total {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-nav .cart_list_bottom button {
+header nav .cart_list_bottom button {
     background-color: var(--Color2);
     border-radius: 8px;
     border: none;
@@ -152,10 +152,66 @@ nav .cart_list_bottom button {
     cursor: pointer;
 }
 
-nav .cart_list_bottom button:hover {
+header nav .cart_list_bottom button:hover {
     filter: brightness(0.8);
 }
 
-nav .cart_list_bottom button:active {
+header nav .cart_list_bottom button:active {
     filter: opacity(0.8);
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e8e8e8;
+    background-color: #d9d9d9;
+    color: #000;
+    padding: 30px 50px;
+    gap: 25px;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+footer section {
+    display: flex;
+    gap: 20px;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    gap: 3px;
+}
+
+footer li::marker {
+    color: var(--Color1);
+}
+
+
+footer hr {
+    border: 2px solid var(--Color1);
+    border-radius: 2px;
+    width: 100%;
+}
+
+footer a:hover {
+    color: var(--Color1);
+    font-weight: bold;
+    text-decoration: 2px solid underline;
+    text-underline-offset: 3px;
 }
