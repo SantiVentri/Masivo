@@ -1,0 +1,82 @@
+main{
+    margin-top: 75px;
+    
+}
+body {
+    background-color: rgb(216, 213, 213);
+}
+
+    ul{
+        list-style-type: circle;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin: 15px;
+    }
+
+    .seccion1{
+        height: 50vh;position: relative;
+        overflow: hidden;
+        color: var(--Claro);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: none;
+        padding: 20px;
+    }
+    .seccion2{
+    padding: 20px;
+    }
+    .seccion1 img{
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+    }
+    .columnas{
+   display: flex;
+   justify-content: center;
+   gap: 30px;
+    }
+    .columnas div{
+ display: flex;
+ flex-direction: column;
+ gap: 17px;
+ width: 500px;
+ border: 7px solid var(--Color1);
+ padding: 20px;
+    }
+.seccion3{
+height: 50vh;
+display: flex;
+
+}
+
+.seccion3 article, .seccion3 aside {
+    height: 100%;
+    width: 100%;
+}
+
+.seccion3 article{
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: center
+}
+.seccion3 article p{
+    padding: 20px;
+    font-size: 30px;
+}
+
+.seccion1 p{
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: center
+}
+
+.seccion3 img{
+    position: absolute;
+    z-index: -1;
+    width: 40%;
+}
