@@ -42,7 +42,7 @@ main section{
     background-color: var(--Color1);
     color: white;
     width: 220px;
-    outline: 1px solid black;
+    outline: 3px solid var(--Color1);
 }
 
 .texto {
