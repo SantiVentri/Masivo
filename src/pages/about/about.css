@@ -83,7 +83,6 @@ main p {
 .elegir {
     display: flex;
     align-items: center;
-    border: 1px solid red;
     height: 500px;
 }
 
