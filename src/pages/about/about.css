@@ -1,82 +1,112 @@
-main{
+main {
     margin-top: 75px;
-    
-}
-body {
-    background-color: rgb(216, 213, 213);
 }
 
-    ul{
-        list-style-type: circle;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        margin: 15px;
-    }
+main ul {
+    list-style-type: circle;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 15px;
+}
 
-    .seccion1{
-        height: 50vh;position: relative;
-        overflow: hidden;
-        color: var(--Claro);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: none;
-        padding: 20px;
-    }
-    .seccion2{
+main section {
+    height: 70vh;
+}
+
+main h3 {
+    font-size: 25px;
+}
+main p {
+    font-size: 20px;
+}
+
+.seccion1 {
+    height: 50vh;
+    position: relative;
+    overflow: hidden;
+    color: var(--Claro);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: none;
     padding: 20px;
-    }
-    .seccion1 img{
-        position: absolute;
-        z-index: -1;
-        width: 100%;
-    }
-    .columnas{
-   display: flex;
-   justify-content: center;
-   gap: 30px;
-    }
-    .columnas div{
- display: flex;
- flex-direction: column;
- gap: 17px;
- width: 500px;
- border: 7px solid var(--Color1);
- padding: 20px;
-    }
-.seccion3{
-height: 50vh;
-display: flex;
-
 }
 
-.seccion3 article, .seccion3 aside {
+.seccion1 img {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+}
+
+.quienesSomos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 30px;
+    gap: 20px;
+}
+
+.columnas {
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+    background-color: var(--Color1);
+    height: auto;
+    gap: 20px;
+}
+
+.columnas div {
+    display: flex;
+    flex-direction: column;
+    border: 5px solid var(--Color1);
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 20px;
+    width: 100%;
+    gap: 20px;
+}
+
+.columnas ol {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    gap: 10px;
+}
+
+.columnas p {
+    font-size: 18px;
+}
+
+.elegir {
+    display: flex;
+    align-items: center;
+}
+
+.elegir article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 100%;
     width: 100%;
 }
 
-.seccion3 article{
-display: flex;
-align-items: center;
-flex-direction: column;
-justify-content: center
-}
-.seccion3 article p{
-    padding: 20px;
-    font-size: 30px;
+.elegir div {
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    gap: 20px;
 }
 
-.seccion1 p{
-display: flex;
-align-items: center;
-flex-direction: column;
-justify-content: center
+.elegir aside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
-.seccion3 img{
-    position: absolute;
-    z-index: -1;
-    width: 40%;
+.elegir img {
+    height: 340px;
 }
