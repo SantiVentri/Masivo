@@ -160,6 +160,19 @@ header nav .cart_list_bottom button:active {
     filter: opacity(0.8);
 }
 
+header .loginButton {
+    background-color: var(--Color1);
+    padding: 11px 18px;
+    font-size: 15px;
+    border-radius: 8px;
+    color: #fff;
+}
+
+header .loginButton:hover {
+    filter: brightness(0.8);
+    color: #fff;
+}
+
 /* Footer */
 footer {
     display: flex;
