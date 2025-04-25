@@ -1,13 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/styles.css">
-        <link rel="stylesheet" href="/src/auth/login.css">
-        <title>Log in | Masivo.com</title>
-    </head>
-    <body>
-        
-    </body>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/auth/login.css">
+    <title>Iniciar sesión | Masivo.com</title>
+</head>
+<body>
+    <form action="#">
+        <center><h1>Inicia Sesión</h1></center>
+        <div class="formContainer">
+            <input type="text" id="username" placeholder="Nombre de usuario" required>
+            <input type="email" id="email" placeholder="Correo electrónico" required>
+            <input type="password" id="password" placeholder="Contraseña" required>
+            <div class="buttons">
+                <button type="submit">Iniciar sesión</button>
+                <button type="reset">Reiniciar formulario</button>
+            </div>
+        </div>
+        <label for="remember">
+            <input type="checkbox" name="remember">
+            <p>Recordar</p>
+        </label>
+    </form>
+</body>
 </html>
