@@ -1,0 +1,255 @@
+/* Primera sección */
+#welcome {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    height: 100vh;
+    overflow: hidden;
+    gap: 20px;
+}
+
+#welcome h1 {
+    font-size: 45px;
+    text-align: center;
+    margin: 0;
+    width: 570px;
+    z-index: 1;
+}
+
+#welcome span {
+    position: relative;
+    padding: 0 5px;
+}
+
+#welcome .box {
+    position: absolute;
+    top: 0;
+    left: -8px;
+    right: -8px;
+    bottom: 0;
+    background-color: var(--Color1);
+    z-index: -1;
+    clip-path: polygon(
+        10px 0%,
+        100% 0%,
+        calc(100% - 10px) 100%,
+        0% 100%
+    );
+}
+
+#welcome a {
+    display: flex;
+    align-items: center;
+    background-color: var(--Color2);
+    border-radius: 8px;
+    font-weight: bold;
+    padding: 8px 16px;
+    gap: 10px;
+}
+
+#welcome a:hover {
+    filter: brightness(0.8);
+}
+
+#welcome .bg {
+    position: absolute;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.8);
+    z-index: -1;
+}
+
+/* Sección de empresas */
+#businesses {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    gap: 30px;
+}
+
+#businesses h1 {
+    font-size: 28px;
+}
+
+#businesses a {
+    color: var(--Color1);
+    text-decoration: 3px solid underline;
+    text-underline-offset: 4px;
+}
+
+#businesses .logos{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* Sección de cursos */
+#courses {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 25px;
+}
+
+/* Barra de búsqueda */
+.searchBar {
+    display: flex;
+}
+
+.searchBar input[type="text"] {
+    border: 3px solid var(--Color1);
+    border-right: none;
+    border-radius: 50px 0 0 50px;
+    padding: 12px 20px;
+    width: 350px;
+    font-size: 15px;
+}
+
+.searchBar button {
+    background-color: var(--Color1);
+    border: 3px solid var(--Color1);
+    border-left: none;
+    border-radius: 0 50px 50px 0;
+    color: #fff;
+    height: 100%;
+    padding: 15px 20px 15px 20px;
+    cursor: pointer;
+}
+
+.searchBar input[type="text"]:focus, .searchBar input[type="text"]:focus + button {
+    outline: 2px solid var(--Color1);
+}
+
+/* Categorías */
+.categories {
+    display: flex;
+    gap: 20px;
+}
+
+.categories input[type="radio"] {
+    display: none;
+}
+
+.categories p {
+    display: flex;
+    border: 3px solid var(--Color1);
+    border-radius: 20px;
+    color: var(--Color1);
+    padding: 10px 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.categories input[type="radio"]:checked + p {
+    background-color: var(--Color2);
+    border-color: var(--Color2);
+    color: #000;
+}
+
+/* Lista de cursos */
+.coursesList {
+    display: grid;
+    align-self: center;
+    grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+    justify-content: center;
+    padding: 0;
+    max-width: 1350px;
+    gap: 60px;
+}
+  
+
+.coursesList .item {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #000;
+    padding: 12px;
+    width: 275px;
+    overflow: hidden;
+    gap: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.coursesList .item .imgContainer {
+    border-radius: 10px;
+    height: 140px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.coursesList .item .imgContainer img {
+    width: 100%;
+}
+
+.coursesList .item .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+}
+
+.coursesList .item .content {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.coursesList .item .content p {
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limita a 2 líneas */
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+.coursesList .item .category {
+    border-radius: 5px;
+    padding: 5px 8px;
+}
+
+.category1 {
+    background-color: rgba(50, 205, 50, 0.4);
+}
+
+.category2 {
+    background-color: rgba(0, 191, 255, 0.4);
+}
+
+.category3 {
+    background-color: rgba(186, 85, 211, 0.4);
+}
+
+.category4 {
+    background-color: rgba(255, 127, 80, 0.4);
+}
+
+.category5 {
+    background-color: rgba(218, 165, 32, 0.4);
+}
+
+
+.btn {
+    background-color: var(--Color2);
+    border-radius: 10px;
+    padding: 10px 0;
+    width: 100%;
+    text-decoration: none;
+    color: #000;
+}
+
+
+/* Efectos hover */
+.coursesList .item:hover {
+    transform: translateY(-10px);
+}
+
+.btn:hover {
+    filter: brightness(0.8);
+}
