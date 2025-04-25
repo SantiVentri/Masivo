@@ -45,6 +45,7 @@ main p {
     flex-direction: column;
     justify-content: center;
     padding: 0 30px;
+    max-height: 500px;
     gap: 20px;
 }
 
@@ -82,6 +83,8 @@ main p {
 .elegir {
     display: flex;
     align-items: center;
+    border: 1px solid red;
+    height: 500px;
 }
 
 .elegir article {
@@ -96,7 +99,7 @@ main p {
 .elegir div {
     display: flex;
     flex-direction: column;
-    width: 650px;
+    width: 85%;
     gap: 20px;
 }
 
