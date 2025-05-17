@@ -41,27 +41,63 @@ header {
     right: 0;
     display: flex;
     justify-content: space-between;
+    padding: 10px 25px;
     background-color: var(--Claro);
-    padding: 22px 30px;
+    gap: 20px;
     z-index: 999;
 }
 
-header h1 {
-    font-size: 30px;
+header .titles {
+    display: flex;
+    gap: 10px;
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.menu span {
+    border: 2px solid black;
+    border-radius: 2px;
+    width: 24px;
 }
 
 header nav {
     display: flex;
     align-items: center;
-    font-size: 18px;
-    font-weight: 600;
-    gap: 30px;
+    gap: 20px;
 }
 
-header nav a:hover {
+header a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    font-weight: 600;
+    gap: 3px;
+}
+
+header nav a span {
+    height: 3px;
+    border-radius: 4px;
+    background-color: var(--Color1);
+    width: 0;
+    transition: 0.3s;
+}
+
+header a:hover {
     color: var(--Color1);
-    text-decoration: 2px solid underline var(--Color1);
-    text-underline-offset: 4px;
+}
+
+header a:hover span {
+    width: 100%;
 }
 
 header nav .cart {
@@ -90,8 +126,8 @@ header nav .cart span {
 
 header nav .cart_list {
     position: absolute;
-    top: 50px;
-    right: -120px;
+    top: 60px;
+    right: -110px;
     display: none;
     flex-direction: column;
     background-color: #e8e8e8;
@@ -222,4 +258,40 @@ footer a:hover {
     font-weight: bold;
     text-decoration: 2px solid underline;
     text-underline-offset: 3px;
+}
+
+@media (max-width: 1000px) {
+    /* Header */
+    header {
+        flex-direction: column;
+        padding: 20px;
+    }
+    header .menu {
+        display: flex;
+    }
+    header nav {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    header .cart {
+        display: none;
+    }
+
+    /* Footer */
+    footer {
+        padding: 20px;
+    }
+    footer div {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    footer div section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    footer hr {
+        width: 90%;
+    }
 }
