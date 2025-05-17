@@ -1,5 +1,7 @@
 header {
     position: static;
+    align-items: flex-start;
+    font-size: 28px;
 }
 
 article,
@@ -36,7 +38,7 @@ textarea {
 
 textarea {
     resize: vertical;
-    max-height: 220px;
+    max-height: 200px;
     min-height: 150px;
 }
 
@@ -62,6 +64,7 @@ aside img {
 
 button {
     background-color: var(--Color2);
+    color: #000;
     border: none;
     border-radius: 8px;
     padding: 12px 25px;
@@ -88,4 +91,10 @@ button:active {
     display: flex;
     list-style-type: none;
     gap: 12px;
+}
+
+@media (max-width: 1000px) {
+    aside {
+        display: none;
+    }
 }
