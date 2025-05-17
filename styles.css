@@ -15,6 +15,10 @@
     --Oscuro: #23201E;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 html {
     scroll-behavior: smooth;
 }
