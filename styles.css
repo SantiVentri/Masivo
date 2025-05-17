@@ -91,7 +91,7 @@ header nav .cart span {
 header nav .cart_list {
     position: absolute;
     top: 50px;
-    right: 0;
+    right: -120px;
     display: none;
     flex-direction: column;
     background-color: #e8e8e8;
@@ -99,10 +99,6 @@ header nav .cart_list {
     width: 250px;
     gap: 20px;
     overflow: hidden;
-}
-
-header nav .cart input {
-    display: none;
 }
 
 header nav .cart input:checked ~ .cart_list {
