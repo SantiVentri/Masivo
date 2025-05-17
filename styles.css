@@ -260,6 +260,10 @@ footer a:hover {
     text-underline-offset: 3px;
 }
 
+footer img {
+    cursor: pointer;
+}
+
 @media (max-width: 1000px) {
     /* Header */
     header {
