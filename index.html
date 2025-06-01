@@ -27,7 +27,7 @@
                     <label>
                         <input type="checkbox" hidden>
                         <img src="src/img/icons/cart.png" alt="carrito de compras" height="30" draggable="false">
-                        <span><b>0</b></span>
+                        <span><b id="cart_num">0</b></span>
                         <div class="cart_list">
                             <h4>Tu carrito:</h4>
                             <div class="user_cart">
@@ -97,23 +97,20 @@
                 </div>
                 <ul class="coursesList">
                     <li class="item">
-                        <a href="src/pages/course.html">
-                            <div class="imgContainer">
-                                <img src="src/img/cursos/fitness1.png" alt="header_image" draggable="false" loading="lazy">
+                        <div class="imgContainer">
+                            <img src="src/img/cursos/fitness1.png" alt="header_image" draggable="false" loading="lazy">
+                        </div>
+                        <div class="content">
+                            <div class="header">
+                                <h3 class="title">Fuerza diaria</h3>
+                                <h4 class="category category1">Fitness</h4>
                             </div>
-                            <div class="content">
-                                <div class="header">
-                                    <h3 class="title">Fuerza diaria</h3>
-                                    <h4 class="category category1">Fitness</h4>
-                                </div>
-                                <p>Rutina de entrenamiento de 15 minutos para activar tu cuerpo cada mañana.</p>
-                            </div>
-                            <a href="#" class="btn"><center><b>Agregar al carrito</b></center></a>
-                        </a>
+                            <p>Rutina de entrenamiento de 15 minutos para activar tu cuerpo cada mañana.</p>
+                        </div>
+                        <button onclick="handleAgregarAlCarrito()"><center><b>Agregar al carrito</b></center></button>
                     </li>
                 
                     <li class="item">
-                        <a href="src/pages/course.html">
                             <div class="imgContainer">
                                 <img src="src/img/cursos/productividad1.png" alt="header_image" draggable="false" loading="lazy">
                             </div>
@@ -124,143 +121,124 @@
                                 </div>
                                 <p>Estrategias para organizar tu día y lograr más con menos esfuerzo.</p>
                             </div>
-                            <a href="#" class="btn"><center><b>Agregar al carrito</b></center></a>
-                        </a>
+                            <button onclick="handleAgregarAlCarrito()"><center><b>Agregar al carrito</b></center></button>
                     </li>
                     <li class="item">
-                        <a href="src/pages/course.html">
-                            <div class="imgContainer">
-                                <img src="src/img/cursos/bienestar1.png" alt="header_image" draggable="false" loading="lazy">
+                        <div class="imgContainer">
+                            <img src="src/img/cursos/bienestar1.png" alt="header_image" draggable="false" loading="lazy">
+                        </div>
+                        <div class="content">
+                            <div class="header">
+                                <h3 class="title">Respirá mejor</h3>
+                                <h4 class="category category3">Bienestar</h4>
                             </div>
-                            <div class="content">
-                                <div class="header">
-                                    <h3 class="title">Respirá mejor</h3>
-                                    <h4 class="category category3">Bienestar</h4>
-                                </div>
-                                <p>Aprendé técnicas de respiración consciente para reducir el estrés y la ansiedad.</p>
-                            </div>
-                            <a href="#" class="btn"><center><b>Agregar al carrito</b></center></a>
-                        </a>
+                            <p>Aprendé técnicas de respiración consciente para reducir el estrés y la ansiedad.</p>
+                        </div>
+                        <button onclick="handleAgregarAlCarrito()"><center><b>Agregar al carrito</b></center></button>
                     </li>
                     <li class="item">
-                        <a href="src/pages/course.html">
-                            <div class="imgContainer">
-                                <img src="src/img/cursos/aprendizaje1.png" alt="header_image" draggable="false" loading="lazy">
+                        <div class="imgContainer">
+                            <img src="src/img/cursos/aprendizaje1.png" alt="header_image" draggable="false" loading="lazy">
+                        </div>
+                        <div class="content">
+                            <div class="header">
+                                <h3 class="title">Estudiá mejor</h3>
+                                <h4 class="category category4">Aprendizaje</h4>
                             </div>
-                            <div class="content">
-                                <div class="header">
-                                    <h3 class="title">Estudiá mejor</h3>
-                                    <h4 class="category category4">Aprendizaje</h4>
-                                </div>
-                                <p>Métodos prácticos para mejorar tu memoria, concentración y hábitos de estudio.</p>
-                            </div>
-                            <a href="#" class="btn"><center><b>Agregar al carrito</b></center></a>
-                        </a>
+                            <p>Métodos prácticos para mejorar tu memoria, concentración y hábitos de estudio.</p>
+                        </div>
+                        <button onclick="handleAgregarAlCarrito()"><center><b>Agregar al carrito</b></center></button>
                     </li>
                     <li class="item">
-                        <a href="src/pages/course.html">
-                            <div class="imgContainer">
-                                <img src="src/img/cursos/finanzas1.jpg" alt="header_image" draggable="false" loading="lazy">
+                        <div class="imgContainer">
+                            <img src="src/img/cursos/finanzas1.jpg" alt="header_image" draggable="false" loading="lazy">
+                        </div>
+                        <div class="content">
+                            <div class="header">
+                                <h3 class="title">Finanzas simples</h3>
+                                <h4 class="category category5">Finanzas</h4>
                             </div>
-                            <div class="content">
-                                <div class="header">
-                                    <h3 class="title">Finanzas simples</h3>
-                                    <h4 class="category category5">Finanzas</h4>
-                                </div>
-                                <p>Conocé los fundamentos para manejar tu dinero y ahorrar sin complicaciones.</p>
-                            </div>
-                            <a href="#" class="btn"><center><b>Agregar al carrito</b></center></a>
-                        </a>
+                            <p>Conocé los fundamentos para manejar tu dinero y ahorrar sin complicaciones.</p>
+                        </div>
+                        <button onclick="handleAgregarAlCarrito()"><center><b>Agregar al carrito</b></center></button>
                     </li>
                     <li class="item">
-                        <a href="src/pages/course.html">
-                            <div class="imgContainer">
-                                <img src="src/img/cursos/fitness2.jpg" alt="header_image" draggable="false" loading="lazy">
+                        <div class="imgContainer">
+                            <img src="src/img/cursos/fitness2.jpg" alt="header_image" draggable="false" loading="lazy">
+                        </div>
+                        <div class="content">
+                            <div class="header">
+                                <h3 class="title">Full body</h3>
+                                <h4 class="category category1">Fitness</h4>
                             </div>
-                            <div class="content">
-                                <div class="header">
-                                    <h3 class="title">Full body</h3>
-                                    <h4 class="category category1">Fitness</h4>
-                                </div>
-                                <p>Entrenamientos integrales para tonificar todo el cuerpo desde casa.</p>
-                            </div>
-                            <a href="#" class="btn"><center><b>Agregar al carrito</b></center></a>
-                        </a>
+                            <p>Entrenamientos integrales para tonificar todo el cuerpo desde casa.</p>
+                        </div>
+                        <button onclick="handleAgregarAlCarrito()"><center><b>Agregar al carrito</b></center></button>
                     </li>
                     <li class="item">
-                        <a href="src/pages/course.html">
-                            <div class="imgContainer">
-                                <img src="src/img/cursos/productividad2.jpg" alt="header_image" draggable="false" loading="lazy">
+                        <div class="imgContainer">
+                            <img src="src/img/cursos/productividad2.jpg" alt="header_image" draggable="false" loading="lazy">
+                        </div>
+                        <div class="content">
+                            <div class="header">
+                                <h3 class="title">Enfocá tu mente</h3>
+                                <h4 class="category category2">Productividad</h4>
                             </div>
-                            <div class="content">
-                                <div class="header">
-                                    <h3 class="title">Enfocá tu mente</h3>
-                                    <h4 class="category category2">Productividad</h4>
-                                </div>
-                                <p>Cómo evitar distracciones y crear un entorno ideal para trabajar.</p>
-                            </div>
-                            <a href="#" class="btn"><center><b>Agregar al carrito</b></center></a>
-                        </a>
+                            <p>Cómo evitar distracciones y crear un entorno ideal para trabajar.</p>
+                        </div>
+                        <button onclick="handleAgregarAlCarrito()"><center><b>Agregar al carrito</b></center></button>
                     </li>
                     <li class="item">
-                        <a href="src/pages/course.html">
-                            <div class="imgContainer">
-                                <img src="src/img/cursos/bienestar2.png" alt="header_image" draggable="false" loading="lazy">
+                        <div class="imgContainer">
+                            <img src="src/img/cursos/bienestar2.png" alt="header_image" draggable="false" loading="lazy">
+                        </div>
+                        <div class="content">
+                            <div class="header">
+                                <h3 class="title">Dormí profundo</h3>
+                                <h4 class="category category3">Bienestar</h4>
                             </div>
-                            <div class="content">
-                                <div class="header">
-                                    <h3 class="title">Dormí profundo</h3>
-                                    <h4 class="category category3">Bienestar</h4>
-                                </div>
-                                <p>Consejos y rutinas para mejorar la calidad de tu sueño naturalmente.</p>
-                            </div>
-                            <a href="#" class="btn"><center><b>Agregar al carrito</b></center></a>
-                        </a>
+                            <p>Consejos y rutinas para mejorar la calidad de tu sueño naturalmente.</p>
+                        </div>
+                        <button onclick="handleAgregarAlCarrito()"><center><b>Agregar al carrito</b></center></button>
                     </li>
                     <li class="item">
-                        <a href="src/pages/course.html">
-                            <div class="imgContainer">
-                                <img src="src/img/cursos/aprendizaje2.jpg" alt="header_image" draggable="false" loading="lazy">
+                        <div class="imgContainer">
+                            <img src="src/img/cursos/aprendizaje2.jpg" alt="header_image" draggable="false" loading="lazy">
+                        </div>
+                        <div class="content">
+                            <div class="header">
+                                <h3 class="title">Lectura eficaz</h3>
+                                <h4 class="category category4">Aprendizaje</h4>
                             </div>
-                            <div class="content">
-                                <div class="header">
-                                    <h3 class="title">Lectura eficaz</h3>
-                                    <h4 class="category category4">Aprendizaje</h4>
-                                </div>
-                                <p>Aprendé a leer más rápido y comprender mejor con técnicas de lectura activa.</p>
-                            </div>
-                            <a href="#" class="btn"><center><b>Agregar al carrito</b></center></a>
-                        </a>
+                            <p>Aprendé a leer más rápido y comprender mejor con técnicas de lectura activa.</p>
+                        </div>
+                        <button onclick="handleAgregarAlCarrito()"><center><b>Agregar al carrito</b></center></button>
                     </li>
                     <li class="item">
-                        <a href="src/pages/course.html">
-                            <div class="imgContainer">
-                                <img src="src/img/cursos/finanzas2.jpg" alt="header_image" draggable="false" loading="lazy">
+                        <div class="imgContainer">
+                            <img src="src/img/cursos/finanzas2.jpg" alt="header_image" draggable="false" loading="lazy">
+                        </div>
+                        <div class="content">
+                            <div class="header">
+                                <h3 class="title">Dinero inteligente</h3>
+                                <h4 class="category category5">Finanzas</h4>
                             </div>
-                            <div class="content">
-                                <div class="header">
-                                    <h3 class="title">Dinero inteligente</h3>
-                                    <h4 class="category category5">Finanzas</h4>
-                                </div>
-                                <p>Tomá mejores decisiones financieras y alcanzá tus metas económicas.</p>
-                            </div>
-                            <a href="#" class="btn"><center><b>Agregar al carrito</b></center></a>
-                        </a>
+                            <p>Tomá mejores decisiones financieras y alcanzá tus metas económicas.</p>
+                        </div>
+                        <button onclick="handleAgregarAlCarrito()"><center><b>Agregar al carrito</b></center></button>
                     </li>
                     <li class="item">
-                        <a href="src/pages/course.html">
-                            <div class="imgContainer">
-                                <img src="src/img/cursos/fitness3.jpg" alt="header_image" draggable="false" loading="lazy">
+                        <div class="imgContainer">
+                            <img src="src/img/cursos/fitness3.jpg" alt="header_image" draggable="false" loading="lazy">
+                        </div>
+                        <div class="content">
+                            <div class="header">
+                                <h3 class="title">Entrená en casa</h3>
+                                <h4 class="category category1">Fitness</h4>
                             </div>
-                            <div class="content">
-                                <div class="header">
-                                    <h3 class="title">Entrená en casa</h3>
-                                    <h4 class="category category1">Fitness</h4>
-                                </div>
-                                <p>Series de ejercicios funcionales sin equipamiento para mantenerte activo.</p>
-                            </div>
-                            <a href="#" class="btn"><center><b>Agregar al carrito</b></center></a>
-                        </a>
+                            <p>Series de ejercicios funcionales sin equipamiento para mantenerte activo.</p>
+                        </div>
+                        <button onclick="handleAgregarAlCarrito()"><center><b>Agregar al carrito</b></center></button>
                     </li>
                 </ul>
             </section>
@@ -295,5 +273,7 @@
             <hr>
             <p>© 2025 Masivo.com - Todos los derechos reservados.</p>
         </footer>
+
+        <script src="script.js"></script>
     </body>
 </html>
