@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: 'inter';
-    src: url(/src/fonts/Inter_28pt-Regular.ttf);
+    src: url(src/fonts/Inter_28pt-Regular.ttf);
 }
 
 :root {

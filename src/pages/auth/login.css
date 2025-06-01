@@ -1,8 +1,7 @@
 /* Fondo general */
 body {
-    background-image: url(/src/img/bg.jpg);
+    background-image: url(../../img/bg.jpg);
     background-size: cover;
-    background-color: var(--Color1);
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
