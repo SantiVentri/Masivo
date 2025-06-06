@@ -71,32 +71,32 @@
                 </form>
                 <div class="categories">
                     <label>
-                        <input type="radio" name="category" checked>
+                        <input type="radio" name="category" onclick="handleCambiarCategoría('all')" checked>
                         <p>Todo</p>
                     </label>
                     <label>
-                        <input type="radio" name="category">
+                        <input type="radio" onclick="handleCambiarCategoría('fitness')" name="category">
                         <p>Fitness</p>
                     </label>
                     <label>
-                        <input type="radio" name="category">
+                        <input type="radio" onclick="handleCambiarCategoría('productividad')" name="category">
                         <p>Productividad</p>
                     </label>
                     <label>
-                        <input type="radio" name="category">
+                        <input type="radio" onclick="handleCambiarCategoría('bienestar')" name="category">
                         <p>Bienestar</p>
                     </label>
                     <label>
-                        <input type="radio" name="category">
+                        <input type="radio" onclick="handleCambiarCategoría('finanzas')" name="category">
                         <p>Finanzas</p>
                     </label>
                     <label>
-                        <input type="radio" name="category">
+                        <input type="radio" onclick="handleCambiarCategoría('aprendizaje')" name="category">
                         <p>Aprendizaje</p>
                     </label>
                 </div>
                 <ul class="coursesList">
-                    <li class="item">
+                    <li class="item all fitness">
                         <div class="imgContainer">
                             <img src="src/img/cursos/fitness1.png" alt="header_image" draggable="false" loading="lazy">
                         </div>
@@ -110,7 +110,7 @@
                         <button onclick="handleAgregarAlCarrito()"><center><b>Agregar al carrito</b></center></button>
                     </li>
                 
-                    <li class="item">
+                    <li class="item all productividad">
                             <div class="imgContainer">
                                 <img src="src/img/cursos/productividad1.png" alt="header_image" draggable="false" loading="lazy">
                             </div>
@@ -123,7 +123,7 @@
                             </div>
                             <button onclick="handleAgregarAlCarrito()"><center><b>Agregar al carrito</b></center></button>
                     </li>
-                    <li class="item">
+                    <li class="item all bienestar">
                         <div class="imgContainer">
                             <img src="src/img/cursos/bienestar1.png" alt="header_image" draggable="false" loading="lazy">
                         </div>
@@ -136,7 +136,7 @@
                         </div>
                         <button onclick="handleAgregarAlCarrito()"><center><b>Agregar al carrito</b></center></button>
                     </li>
-                    <li class="item">
+                    <li class="item all aprendizaje">
                         <div class="imgContainer">
                             <img src="src/img/cursos/aprendizaje1.png" alt="header_image" draggable="false" loading="lazy">
                         </div>
@@ -149,7 +149,7 @@
                         </div>
                         <button onclick="handleAgregarAlCarrito()"><center><b>Agregar al carrito</b></center></button>
                     </li>
-                    <li class="item">
+                    <li class="item all finanzas">
                         <div class="imgContainer">
                             <img src="src/img/cursos/finanzas1.jpg" alt="header_image" draggable="false" loading="lazy">
                         </div>
@@ -162,7 +162,7 @@
                         </div>
                         <button onclick="handleAgregarAlCarrito()"><center><b>Agregar al carrito</b></center></button>
                     </li>
-                    <li class="item">
+                    <li class="item all fitness">
                         <div class="imgContainer">
                             <img src="src/img/cursos/fitness2.jpg" alt="header_image" draggable="false" loading="lazy">
                         </div>
@@ -175,7 +175,7 @@
                         </div>
                         <button onclick="handleAgregarAlCarrito()"><center><b>Agregar al carrito</b></center></button>
                     </li>
-                    <li class="item">
+                    <li class="item all productividad">
                         <div class="imgContainer">
                             <img src="src/img/cursos/productividad2.jpg" alt="header_image" draggable="false" loading="lazy">
                         </div>
@@ -188,7 +188,7 @@
                         </div>
                         <button onclick="handleAgregarAlCarrito()"><center><b>Agregar al carrito</b></center></button>
                     </li>
-                    <li class="item">
+                    <li class="item all bienestar">
                         <div class="imgContainer">
                             <img src="src/img/cursos/bienestar2.png" alt="header_image" draggable="false" loading="lazy">
                         </div>
@@ -201,7 +201,7 @@
                         </div>
                         <button onclick="handleAgregarAlCarrito()"><center><b>Agregar al carrito</b></center></button>
                     </li>
-                    <li class="item">
+                    <li class="item all aprendizaje">
                         <div class="imgContainer">
                             <img src="src/img/cursos/aprendizaje2.jpg" alt="header_image" draggable="false" loading="lazy">
                         </div>
@@ -214,7 +214,7 @@
                         </div>
                         <button onclick="handleAgregarAlCarrito()"><center><b>Agregar al carrito</b></center></button>
                     </li>
-                    <li class="item">
+                    <li class="item all finanzas">
                         <div class="imgContainer">
                             <img src="src/img/cursos/finanzas2.jpg" alt="header_image" draggable="false" loading="lazy">
                         </div>
@@ -227,7 +227,7 @@
                         </div>
                         <button onclick="handleAgregarAlCarrito()"><center><b>Agregar al carrito</b></center></button>
                     </li>
-                    <li class="item">
+                    <li class="item all fitness">
                         <div class="imgContainer">
                             <img src="src/img/cursos/fitness3.jpg" alt="header_image" draggable="false" loading="lazy">
                         </div>
