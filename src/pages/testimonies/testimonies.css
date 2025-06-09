@@ -7,6 +7,7 @@ main {
 
 main img{
     height: 260px;
+    object-fit: cover;
 }
 
 main h1{
