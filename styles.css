@@ -25,6 +25,7 @@ html {
 
 body {
     background-color: var(--Claro);
+    min-height: 100vh;
 }
 
 *::selection {
@@ -207,6 +208,11 @@ header .loginButton {
 header .loginButton:hover {
     filter: brightness(0.8);
     color: #fff;
+}
+
+nav.active {
+    display: flex;
+    flex-direction: column;
 }
 
 /* Footer */

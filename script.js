@@ -1,3 +1,9 @@
+function handleMenu() {
+    const nav = document.querySelector('nav');
+
+    nav.classList.toggle('active');
+}
+
 function handleAgregarAlCarrito() {
     const carrito = document.getElementById('cart_num');
     let numero = parseInt(carrito.textContent) || 0;
