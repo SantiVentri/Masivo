@@ -189,6 +189,7 @@
 }
 
 .coursesList .item .header {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -211,30 +212,33 @@
 
 }
 
-.coursesList .item .category {
+.category {
+    position: absolute;
+    right: 0;
     border-radius: 5px;
     padding: 5px 8px;
 }
 
 .category1 {
-    background-color: rgba(50, 205, 50, 0.4);
+    background-color: rgb(173, 229, 173);
 }
 
 .category2 {
-    background-color: rgba(0, 191, 255, 0.4);
+    background-color: rgb(153, 227, 255);
 }
 
 .category3 {
-    background-color: rgba(186, 85, 211, 0.4);
+    background-color: rgb(219, 179, 229);
 }
 
 .category4 {
-    background-color: rgba(255, 127, 80, 0.4);
+    background-color: rgb(255, 191, 173);
 }
 
 .category5 {
-    background-color: rgba(218, 165, 32, 0.4);
+    background-color: rgb(239, 213, 153);
 }
+  
 
 
 .item button {
