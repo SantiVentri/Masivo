@@ -19,12 +19,12 @@
                         <a href="../../../index.html"><h1>Masivo.com</h1></a>
                     </div>
                 </header>
-                <form action="">
+                <form onsubmit="handleSubmit(event)" onreset="handleReset()">
                     <h1>Contacto</h1>
-                    <input type="email" name="email" placeholder="Email: " required>
-                    <input type="text" name="subject" placeholder="Asunto: " required>
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensaje: "
-                        required></textarea>
+                    <input type="email" name="email" placeholder="Email: ">
+                    <input type="text" name="subject" placeholder="Asunto: ">
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensaje: "></textarea>
+                    <div id="messageError" style="display: none; margin-top: 10px;"></div>
                     <div class="buttons">
                         <button type="submit"><b>Enviar</b></button>
                         <button type="reset"><b>Borrar formulario</b></button>
@@ -46,6 +46,7 @@
             </aside>
         </section>
     </main>
+    <script src="contact.js"></script>
 </body>
 
 </html>
