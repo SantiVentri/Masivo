@@ -10,7 +10,7 @@
     <title>Iniciar sesión</title>
 </head>
 <body>
-    <form id="loginForm" action="#" method="POST">
+    <form id="loginForm" method="POST">
         <center><h1>Inicia Sesión</h1></center>
         <div class="inputContainer">
             <label for="username">Nombre de Usuario</label>
@@ -37,6 +37,7 @@
     </form>
     <script>
         document.getElementById("loginForm").addEventListener("submit", function(e) {
+            e.preventDefault();
             const username = document.getElementById("username").value.trim();
             const email = document.getElementById("email").value.trim();
             const password = document.getElementById("password").value.trim();
@@ -44,23 +45,21 @@
 
             if (username === "") {
                 alert("Por favor, ingresa tu nombre de usuario.");
-                e.preventDefault();
                 return;
             }
 
             if (!emailRegex.test(email)) {
                 alert("Por favor, ingresa un correo electrónico válido.");
-                e.preventDefault();
                 return;
             }
 
             if (password.length < 6) {
                 alert("La contraseña debe tener al menos 6 caracteres.");
-                e.preventDefault();
                 return;
             }
 
             alert("Formulario enviado correctamente.");
+            window.location.href = "../../../index.html";
         });
     </script>
 </body>

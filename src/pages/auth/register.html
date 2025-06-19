@@ -10,7 +10,7 @@
   <title>Registro</title>
 </head>
 <body>
-  <form id="registerForm" action="#" method="POST">
+  <form id="registerForm" method="POST">
     <center><h1>Crear Cuenta</h1></center>
     <div class="inputContainer">
       <label for="username">Nombre de Usuario</label>
@@ -37,25 +37,22 @@
 
   <script>
     document.getElementById("registerForm").addEventListener("submit", function(e) {
+      e.preventDefault();
       const password = document.getElementById("password").value.trim();
       const confirmPassword = document.getElementById("confirmPassword").value.trim();
 
-
       if (password.length < 6) {
         alert("La contraseña debe tener al menos 6 caracteres.");
-        e.preventDefault();
         return;
       }
-
 
       if (password !== confirmPassword) {
         alert("Las contraseñas no coinciden.");
-        e.preventDefault();
         return;
       }
 
-
       alert("¡Registro exitoso!");
+      window.location.href = "../../../index.html";
     });
   </script>
 </body>
