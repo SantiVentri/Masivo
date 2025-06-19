@@ -1,31 +1,62 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="../../../styles.css">
-    <link rel="stylesheet" href="auth.css">
-    <link rel="shortcut icon" href="../../../src/img/favicon.png" type="image/x-icon">
-    <title>Crear cuenta | Masivo.com</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="auth.css">
+  <link rel="stylesheet" href="../../../styles.css">
+  <link rel="shortcut icon" href="../../../src/img/favicon.png" type="image/x-icon">
+  <title>Registro</title>
 </head>
 <body>
-    <form action="#">
-        <center><h1>Crea tu cuenta</h1></center>
-        <div class="formContainer">
-            <input type="text" id="username" placeholder="Nombre de usuario" required>
-            <input type="email" id="email" placeholder="Correo electrónico" required>
-            <input type="password" id="password" placeholder="Contraseña" required>
-            <label for="remember">
-                <input type="checkbox" id="remember">
-                <p>Recordarme la próxima vez</p>
-            </label>
-            <div class="buttons">
-                <button type="submit">Crear cuenta</button>
-                <button type="reset">Reiniciar formulario</button>
-            </div>
-        </div>
-        <a href="login.html">¿Ya tienes una cuenta? <span>Inicia sesión</span></a>
-    </form>
+  <form id="registerForm" action="#" method="POST">
+    <center><h1>Crear Cuenta</h1></center>
+    <div class="inputContainer">
+      <label for="username">Nombre de Usuario</label>
+      <input type="text" id="username" name="username" placeholder="Nombre de Usuario" required>
+    </div>
+    <div class="inputContainer">
+      <label for="email">Correo electrónico</label>
+      <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+    </div>
+    <div class="inputContainer">
+      <label for="password">Contraseña</label>
+      <input type="password" id="password" name="password" placeholder="Contraseña" required>
+    </div>
+    <div class="inputContainer">
+      <label for="confirmPassword">Confirmar Contraseña</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirmar Contraseña" required>
+    </div>
+    <div class="buttons">
+      <button type="submit">Registrarse</button>
+      <button type="reset">Reiniciar</button>
+      <p>¿Ya tenés una cuenta? <a href="login.html">Inicia sesión aquí</a></p>
+    </div>
+  </form>
+
+  <script>
+    document.getElementById("registerForm").addEventListener("submit", function(e) {
+      const password = document.getElementById("password").value.trim();
+      const confirmPassword = document.getElementById("confirmPassword").value.trim();
+
+
+      if (password.length < 6) {
+        alert("La contraseña debe tener al menos 6 caracteres.");
+        e.preventDefault();
+        return;
+      }
+
+
+      if (password !== confirmPassword) {
+        alert("Las contraseñas no coinciden.");
+        e.preventDefault();
+        return;
+      }
+
+
+      alert("¡Registro exitoso!");
+    });
+  </script>
 </body>
 </html>
