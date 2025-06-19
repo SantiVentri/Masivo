@@ -11,7 +11,7 @@ main ul {
 }
 
 main section {
-    height: 70vh;
+    min-height: 70vh;
 }
 
 main h3 {
@@ -22,30 +22,23 @@ main p {
 }
 
 .seccion1 {
-    height: 50vh;
-    position: relative;
-    overflow: hidden;
+    min-height: 50vh;
     color: var(--Claro);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: none;
-    padding: 20px;
-}
-
-.seccion1 img {
-    position: absolute;
-    z-index: -1;
-    width: 100%;
+    background-image: url(../../img//d9cf7b761167633b2ba747.webp);
+    background-size: cover;
+    padding: 40px 20px;
 }
 
 .quienesSomos {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 30px;
-    max-height: 500px;
+    padding: 40px 30px;
+    min-height: 500px;
     gap: 20px;
 }
 
@@ -83,7 +76,7 @@ main p {
 .elegir {
     display: flex;
     align-items: center;
-    height: 500px;
+    min-height: 500px;
 }
 
 .elegir article {
@@ -111,4 +104,29 @@ main p {
 
 .elegir img {
     height: 340px;
+}
+
+@media (max-width: 768px) {
+  .elegir aside img {
+    width: 100%;
+    height: auto;
+  }
+
+  .columnas {
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 30px;
+  }
+
+  .elegir {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 25px;
+    gap: 40px;
+  }
+
+  .elegir div {
+    width: 100%;
+  }
+
 }
